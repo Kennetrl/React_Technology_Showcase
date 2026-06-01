@@ -1,0 +1,38 @@
+import Home from "../pages/Home/Home";
+import ChakraPage from "../pages/UI/Chakra/ChakraPage";
+import Formik from "../pages/Forms&Validation/Formik";
+import MobxPage from "../pages/State/Mobx/MobxPage";
+import ReactHookFormPage from "../pages/Forms/ReactHookForm/ReactHookFormPage";
+import ReactRouterPage from "../pages/ReactRouter/ReactRouterPage";
+import ZodPage from "../pages/Forms/Zod/ZodPage";
+import MaterialPage from "../pages/UI/Material/MaterialPage";
+
+export type View =
+  | "home"
+  | "chakra"
+  | "material"
+  | "tailwind"
+  | "context"
+  | "mobx"
+  | "zustand"
+  | "react-router"
+  | "tanstack-router"
+  | "formik"
+  | "react-hook-form"
+  | "zod"
+  | "use-state"
+  | "use-effect"
+  | "use-memo"
+  | "use-callback"
+  | "cypress";
+
+export const pages: Partial<Record<View, React.ReactNode>> = {
+  home: <Home />,
+  chakra: <ChakraPage />,
+  formik: <Formik />,
+  mobx: <MobxPage />,
+  "react-hook-form": <ReactHookFormPage />,
+  "react-router": <ReactRouterPage />,
+  zod: <ZodPage />,
+  material: <MaterialPage />,
+};
