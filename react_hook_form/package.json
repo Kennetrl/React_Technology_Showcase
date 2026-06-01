@@ -1,5 +1,5 @@
 {
-  "name": "mobx",
+  "name": "react_hook_form",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "mobx": "^6.15.4",
-    "mobx-react-lite": "^4.1.1",
     "react": "^19.2.6",
-    "react-dom": "^19.2.6"
+    "react-dom": "^19.2.6",
+    "react-hook-form": "^7.77.0"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
